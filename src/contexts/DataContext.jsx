@@ -7,8 +7,8 @@ import React from 'react'
 const DataContextProvider = () => {
   return (
     <>
-    <DataContext.Provider>
-        
+    <DataContext.Provider value="Ruslanin Datasi">
+
     </DataContext.Provider>
     </>
   )
