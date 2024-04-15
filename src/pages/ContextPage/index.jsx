@@ -1,9 +1,9 @@
 import { DataContext } from "../../contexts/DataContext"
 
 const ContextPage = ({}) => {
-useContext(DataContext)
+  const value =  useContext(DataContext)
   return (
-        <div>ContextPage </div>
+        <div>ContextPage {value}</div>
 
   )
 }
