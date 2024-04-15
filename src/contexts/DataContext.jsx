@@ -1,17 +1,17 @@
 import { createContext } from "react";
 
-const DataContext = createContext("")
+export const DataContext = createContext("");
 
-import React from 'react'
+import React from "react";
 
-const DataContextProvider = () => {
+const DataContextProvider = ({ children }) => {
   return (
     <>
-    <DataContext.Provider value="Ruslanin Datasi">
-
-    </DataContext.Provider>
+      <DataContext.Provider value="Ruslanin Datasi">
+        {children}
+      </DataContext.Provider>
     </>
-  )
-}
+  );
+};
 
-export default DataContextProvider
+export default DataContextProvider;
